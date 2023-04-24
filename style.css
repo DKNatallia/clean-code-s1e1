@@ -39,13 +39,13 @@
     margin:0;
     padding: 0px;
 }
-li, h3 {
+.task-item, .task-staus {
     list-style:none;
 }
-input,button{
+.input, .button{
     outline:none;
 }
-button {
+.button {
     background: none;
     border: 0px;
     color: #888;
@@ -54,11 +54,11 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.button:hover {
     color: #3a3a3a;
 }
 /* Heading */
-h3,
+.task-status,
 label[for="new-task"] {
     color: #333;
     font-weight: 700;
@@ -68,7 +68,7 @@ label[for="new-task"] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+.input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -80,7 +80,7 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.input[type="text"]:focus {
     color: #333;
 }
 
@@ -89,7 +89,7 @@ label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
     width: 318px;
 }
 
@@ -107,7 +107,7 @@ input#new-task {
     vertical-align: middle;
 }
 
-.task-item   > input[type="checkbox"] {
+.task-item > input[type="checkbox"] {
     margin: 0 10px;
 }
 .task-item > label {
@@ -116,15 +116,15 @@ input#new-task {
     font-size: 18px;
     width: 226px;
 }
-.task-item > input[type="text"] {
+.task-item > .input[type="text"] {
     width: 226px
 }
-button.delete img {
+.button.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.button.delete img:hover {
     transform: rotateZ(0);
 }
 
